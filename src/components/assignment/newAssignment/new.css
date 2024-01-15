@@ -1,0 +1,84 @@
+.popUpTitle {
+  color: var(--text-100, #1c4980);
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0%;
+}
+.formChild {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px 0px;
+}
+.formChild:nth-child(4) {
+  gap: 0px;
+}
+
+.dialog input,
+select {
+  height: 34px;
+  border-radius: 8px;
+  border: 1px solid var(--System-stroke2, #dadce0);
+  background: #fff;
+  padding: 0px 10px;
+  color: #1c4980;
+}
+
+.formChild > input:nth-child(3) {
+  border-radius: 0px 0px 8px 8px;
+}
+.dialog label {
+  color: var(--text-100, #1c4980);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.skillLabel {
+  margin-bottom: 8px;
+}
+.formButton {
+  display: flex;
+  height: 40px;
+  padding: 10px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  align-self: stretch;
+  border-radius: 8px;
+  background: var(--Secondary-1, #0073e6);
+  color: white;
+  border: none;
+  width: 100%;
+  font-weight: 600;
+}
+
+.skillsContainer {
+  display: flex;
+  padding: 16px;
+  flex-wrap: wrap;
+  max-height: 10vh;
+  overflow-y: scroll;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 8px 8px 0px 0px;
+  border: 1px solid var(--System-Divider, #dde5ea);
+  border-bottom: none;
+}
+
+.skillsContainer div {
+  display: flex;
+  padding: 6px 8px 6px 10px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2px;
+  border-radius: 22px;
+  background: var(--Accent-blue-light, #ddedff);
+}
+
