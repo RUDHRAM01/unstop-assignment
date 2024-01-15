@@ -1,0 +1,457 @@
+.assignment {
+  display: flex;
+  gap: 20px;
+  background-color: #f6f8fa;
+  height: 100vh;
+}
+
+.assignmentCont {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  border-radius: 16px;
+}
+
+.assignmentHead {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 20px 0px 20px;
+  border-bottom: 2px solid #dadce0;
+}
+
+.assignmentHead h1 {
+  color: var(--text-100, #1c4980);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.menuIcon {
+  display: none;
+}
+
+.vertical-line {
+  border-left: 2px solid #dadce0;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.assignmentHead h4 {
+  color: var(--Secondary-1, #0073e6);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.assTabParent {
+  display: flex;
+  width: 100%;
+  gap: 8px;
+}
+
+.assTabs {
+  display: flex;
+  border-bottom: 3px solid #0073e6;
+}
+.assTabs:nth-child(2) {
+  display: none;
+}
+
+.assignmentBody {
+  padding: 20px;
+}
+
+/* assignment body */
+
+.assignmentOverview {
+  display: flex;
+  flex-direction: column;
+}
+
+.imgIcon {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: var(--Accent-purple-light, #ebe8fd);
+}
+
+.assParent {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 12px;
+  border: 1px solid var(--System-stroke2, #dadce0);
+}
+
+.v-line {
+  border-left: 2px solid #dadce0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.assignmentHeading {
+  color: var(--text-100, #1c4980);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 25.2px */
+  margin-top: 0%;
+}
+
+.cardHeading {
+  color: var(--text-100, #1c4980);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 19.6px */
+  margin-top: 0%;
+}
+
+
+
+.assValue {
+  color: var(--text-100, #1c4980);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 28px */
+}
+
+.baseAss {
+  color: var(--Status-Success, #05c165);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 16.8px */
+}
+
+.assBaseTitle {
+  color: #1c4980;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 16.8px */
+}
+
+.overviewCard2,
+.overviewCard1:nth-child(1) {
+  border-right: 1px solid var(--System-stroke2, #dadce0);
+}
+
+.overviewCard2 {
+  min-width: 30%;
+}
+
+
+@media screen and (max-width: 1288px) {
+  .overviewCard2:nth-child(3) {
+    border: none;
+  }
+  .assParent > div:nth-child(2) {
+    flex-grow: 1;
+  }
+  .assParent > div:not(:last-child){
+    border-bottom: 1px solid #bacbd5;
+  }
+}
+@media screen and (max-width: 1106px) {
+  .assParent > div:nth-child(3) {
+    border-right: 1px solid #bacbd5;
+    border-bottom: none;
+  }
+}
+
+@media screen and (max-width: 1108px) {
+  .overviewCard2:nth-child(2) {
+    border: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .cardShare{
+    flex-direction: column-reverse;
+  }
+}
+
+.myAss {
+  color: var(--text-100, #1c4980);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 25.2px */
+}
+
+.createAssignment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 360px;
+  width: 90%;
+  background-color: #f6f8fa;
+  padding: 30px;
+  border-radius: 12px;
+  flex-wrap: wrap;
+}
+
+.createAssignment img {
+  background-color: white;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.newAss {
+  color: var(--text-100, #1c4980);
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.createDis {
+  color: var(--text-100, #1c4980);
+  text-align: center;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0%;
+}
+
+.assCard {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  width: 90%;
+  padding: 16px;
+  border-radius: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--System-stroke2, #dadce0);
+  background: var(--Text-White, #fff);
+}
+
+.createdAss {
+  color: var(--text-100, #1c4980);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 25.2px */
+  margin-bottom: 0%;
+  margin-top: 10px;
+}
+
+.jobTitle {
+  color: var(--text-100, #1c4980);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 19.6px */
+}
+
+.date {
+  color: var(--Primary-50, #8da4bf);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.assCard .assIcon {
+  width: 50px;
+  height: 50px;
+}
+
+.calendar {
+  width: 14px;
+  height: 14px;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  border-bottom: 2px dotted #bacbd5;
+}
+
+.vr-line {
+  border-left: 1px solid #dadce0;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+}
+.assCardMid {
+  margin-bottom: 16px;
+}
+.assCardBott {
+  margin-top: 16px;
+}
+.assCard button {
+  display: flex;
+  height: 30px;
+  padding: 2px 8px 2px 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 50px;
+  border: 1px solid var(--text-100, #1c4980);
+  background: var(--Text-White, #fff);
+}
+
+.assCard button img {
+  width: 20px;
+  height: 20px;
+}
+
+.timeDu {
+  color: var(--text-100, #1c4980);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 16.8px */
+}
+
+.allCreAss::-webkit-scrollbar {
+  display: none;
+}
+
+.myAssCont {
+  max-height: 50vh;
+}
+
+.assTools {
+  display: none;
+}
+
+.person,
+.group > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--pastel-Neon-Blue, #6548ee);
+  color: white;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-weight: 600;
+}
+
+.group {
+  display: flex;
+  position: relative;
+  margin-right: 30px;
+}
+.group > div:nth-child(2) {
+  position: absolute;
+  left: 50%;
+  background-color: #3079e1;
+}
+
+.group > div:nth-child(3) {
+  position: absolute;
+  left: 100%;
+  background-color: #e9407a;
+}
+
+
+@media screen and (max-width: 760px) {
+  .assignmentOverview,
+  .vertical-line {
+    display: none;
+  }
+  .menuIcon {
+    display: flex;
+    border-radius: 60px;
+    background: var(--secondary-5, #f2f8fe);
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .assignmentHead {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+    padding: 0%;
+  }
+  .topAssHead {
+    padding: 0px 20px;
+  }
+  .gapDiv {
+    display: none;
+  }
+
+  .assTabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+  }
+
+  .assTabs h4 {
+    margin-top: 10px;
+  }
+  .assTabs:nth-child(2) {
+    display: flex;
+  }
+  .assTabs:nth-child(2) {
+    border: none;
+  }
+  .myAss {
+    margin: 0%;
+  }
+  .allCreAss {
+    justify-content: center;
+  }
+  .myAssCont {
+    max-height: 80vh;
+  }
+  .createAssignment {
+    padding: 20px 30px;
+  }
+  .assCardMid,
+  .assCardBott {
+    margin: 4px;
+  }
+  .assTools {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+}
+
