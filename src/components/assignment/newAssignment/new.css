@@ -62,7 +62,7 @@ select {
   display: flex;
   padding: 16px;
   flex-wrap: wrap;
-  max-height: 10vh;
+  max-height: 10dvh;
   overflow-y: scroll;
   align-items: flex-start;
   gap: 10px;
